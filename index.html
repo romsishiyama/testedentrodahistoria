@@ -1,0 +1,44 @@
+
+<!DOCTYPE html-5>
+<html lang=”pt-br>
+
+<head>
+    <meta charset="utf-8"><html>
+    <meta name="description" content="Desafio frontEnd | Dentro da História">
+    <meta name="keywords" content="LGPD, Lei geral de proteção de dados, formulário HTML">
+    <meta name="author" content="Romênia Ishiyama">    
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Formulário com LGPD</title>
+</head>
+
+<body>
+<form name="form1" action="enviar.php" method="post">
+Nome:
+<input name="nome" type="text"><br /><br />
+Email:
+<input name="email" type="text"><br /><br />
+Senha:
+<input name="senha" type="password"><br /><br />
+Repetir Senha:
+<input name="rep_senha" type="password"><br /><br />
+<input type="submit"  onclick="return validar()">
+<label>
+
+    <input type="hidden" data-privacy="true" name="privacy_policy" value="1">
+   
+    <input type="hidden" data-privacy="true" name="terms_of_use" value="1">
+   
+    Ao informar meus dados, eu concordo com a <a href="privacy-policy-link" target="_blank">Política de Privacidade</a> e com os <a href="terms-of-use-link" target="_blank">Termos de Uso</a>.
+   
+   </label>
+   <label>
+
+    <input type="checkbox" data-privacy="true" name="communications"  value="1">
+   
+    Eu concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses.
+   
+   </label>
+</form>
+</body>
+</html>
